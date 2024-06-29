@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     if (tenzies) {
-      if (highScore < score && highScore !== 0) {
+      if (highScore <= score && highScore !== 0) {
         console.log("you didn't cross highscore");
       } else {
         setNewHighScore(true);
